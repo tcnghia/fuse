@@ -96,6 +96,9 @@ type InodeAttributes struct {
 	// Ownership information
 	Uid uint32
 	Gid uint32
+
+	// Device number information
+	Rdev uint32
 }
 
 func (a *InodeAttributes) DebugString() string {
